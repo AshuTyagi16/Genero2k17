@@ -13,6 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.flaviofaria.kenburnsview.KenBurnsView;
+import com.flaviofaria.kenburnsview.Transition;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -40,6 +43,19 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        KenBurnsView kbv = (KenBurnsView) findViewById(R.id.image);
+
+        kbv.setTransitionListener(new KenBurnsView.TransitionListener() {
+            @Override
+            public void onTransitionStart(Transition transition) {
+
+            }
+            @Override
+            public void onTransitionEnd(Transition transition) {
+
+            }
+        });
     }
 
     @Override
@@ -80,17 +96,17 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.events) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.special_events) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.register) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.contact_us) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.core_team) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.sponsors) {
 
         }
 
