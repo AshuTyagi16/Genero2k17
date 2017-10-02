@@ -9,7 +9,7 @@
     tools:showIn="@layout/app_bar_main">
 
     <com.flaviofaria.kenburnsview.KenBurnsView
-        android:id="@+id/image"
+        android:id="@+id/kenbuns_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/potc" />
