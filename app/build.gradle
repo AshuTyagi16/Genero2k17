@@ -38,8 +38,13 @@ dependencies {
     compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
 
+    //DATA
+    compile 'com.google.code.gson:gson:2.8.2'
+
     //OTHERS
     compile 'com.flaviofaria:kenburnsview:1.0.7'
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+    compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
 
 }

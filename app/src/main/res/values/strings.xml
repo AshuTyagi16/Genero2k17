@@ -5,4 +5,348 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- CLUBS -->
+    <string name="techcs">Tech CS</string>
+    <string name="techme">Tech ME</string>
+    <string name="techce">Tech CE</string>
+    <string name="techee">Tech EE</string>
+    <string name="egaming">eGaming</string>
+    <string name="literary">Literary</string>
+    <string name="cultural">Cultural</string>
+    <string name="informals">Informals</string>
+
+    <!-- TECH CS EVEVTS -->
+    <string name="duel_freaks">DUEL OF THE GEEK FREAKS</string>
+    <string name="duel_freaks_description">Technology based quiz, mind wobbling puzzles and exciting riddles to exercise your brains.</string>
+    <string name="duel_freaks_duration">2.5 – 3 hours</string>
+    <string name="duel_freaks_rules">N/A</string>
+    <string name="duel_freaks_event_type">Three Round Match</string>
+
+    <string name="global_optimal">GLOBAL OPTIMAL</string>
+    <string name="global_optimal_description">Devise a solution and give an algorithm, with an example and a dry run of the example.</string>
+    <string name="global_optimal_duration">2.5 Hours</string>
+    <string name="global_optimal_rules">N/A</string>
+    <string name="global_optimal_event_type">Single Round Match (SRM)</string>
+
+    <string name="shut_the_bug">SHUT THE BUG UP</string>
+    <string name="shut_the_bug_description">Find the bugs and destroy them off their existence!</string>
+    <string name="shut_the_bug_duration">1.5 – 2 Hours</string>
+    <string name="shut_the_bug_rules">N/A</string>
+    <string name="shut_the_bug_event_type">Single Round Match (SRM)</string>
+
+    <string name="no_leisure">NO LEISURE FOR LINGUISTICS</string>
+    <string name="no_leisure_description">Randomized them of Language quiz!</string>
+    <string name="no_leisure_duration">1 Hour</string>
+    <string name="no_leisure_rules">N/A</string>
+    <string name="no_leisure_event_type">Single Round Match (SRM)</string>
+
+    <string name="simply_weblogical">SIMPLY WEBLOGICAL</string>
+    <string name="simply_weblogical_description">Design the best webpage you can in the first round using HTML and CSS. Complexity and number of web pages increase in the next round.</string>
+    <string name="simply_weblogical_duration">4.5 Hours</string>
+    <string name="simply_weblogical_rules">N/A</string>
+    <string name="simply_weblogical_event_type">Single Round Match (SRM)</string>
+
+    <string name="hack_trec">HACK TREC</string>
+    <string name="hack_trec_description">Two day event,with teams battling to come up with the most innovative design on the time.Technology no bar.</string>
+    <string name="hack_trec_duration">30 Hours</string>
+    <string name="hack_trec_rules">N/A</string>
+    <string name="hack_trec_event_type">Hackathon</string>
+
+    <string name="al_khwarizmi">AL-KHWARIZMI PROGRAMMING EVENT</string>
+    <string name="al_khwarizmi_description">Solve the maximum number of problems in minimum time and with minimum number of wrong submission.</string>
+    <string name="al_khwarizmi_duration">8 Hours</string>
+    <string name="al_khwarizmi_rules">N/A</string>
+    <string name="al_khwarizmi_event_type">Full day competitive Programming Event</string>
+
+    <!-- TECH ME -->
+    <string name="lathe_war">LATHE WAR</string>
+    <string name="lathe_war_description">Want to perform operations on the lathe machine?? This is it, an event where you show how strong your workshop skills are. Lathe War is a manufacturing event about command and accuracy to prove your proficiency on a Lathe machine.</string>
+    <string name="lathe_war_duration">N/A</string>
+    <string name="lathe_war_rules">N/A</string>
+    <string name="lathe_war_event_type">Two Round Match</string>
+
+    <string name="pirates_battle">PIRATES BATTLE</string>
+    <string name="pirates_battle_description">The team has to build a boat which can transverse a maze that will contain hurdles within a given time period.</string>
+    <string name="pirates_battle_duration">N/A</string>
+    <string name="pirates_battle_rules">N/A</string>
+    <string name="pirates_battle_event_type">Single Round Match (SRM)</string>
+
+    <string name="modelling">3-D MODELLING</string>
+    <string name="modelling_description">Desktop computers with the required software will be provided by the organizers. It is to be noted that the three views will be provided in printed format.</string>
+    <string name="modelling_duration">N/A</string>
+    <string name="modelling_rules">N/A</string>
+    <string name="modelling_event_type">Single Round Match (SRM)</string>
+
+    <string name="road_rash">ROBOT ROAD RASH</string>
+    <string name="road_rash_description">The robots will start from the starting positions and both of them will move in the same sense (shown by arrows). The robots are expected to chase and approach the other robot from behind. Any dimension of the robot should not be less than 200 mm during all time of the game.</string>
+    <string name="road_rash_duration">N/A</string>
+    <string name="road_rash_rules">N/A</string>
+    <string name="road_rash_event_type">Single Round Match (SRM)</string>
+
+    <string name="water_rocket">WATER ROCKET</string>
+    <string name="rwater_rocket_description">The water rocketry challenge is a competition to build a rocket powered by pressurized water. The competition focuses on designing aerodynamically better rockets that would be capable of targeted flights when launched at a particular angle from the horizontal. The participants need to study the basics of rocketry and come up with their own designs.</string>
+    <string name="water_rocket_duration">N/A</string>
+    <string name="water_rocket_rules">N/A</string>
+    <string name="water_rocket_event_type">N/A</string>
+
+    <string name="automobile_quiz">ROBOT ROAD RASH</string>
+    <string name="automobile_quiz_description">The event is about a quiz which will be based on basic automobile engineering objective type questions. The questions will not be asked directly in the quiz. Each question would have some obliges so first you have to decode the question for getting the meaning of question and then you have to be accountable. For decoding the question, the hint will be provided within the question. Using that hint you can easily decode the question.</string>
+    <string name="automobile_quiz_event_type">N/A</string>
+    <string name="automobile_quiz_duration">N/A</string>
+    <string name="automobile_quiz_rules">N/A</string>
+
+    <!-- TECH CE -->
+    <string name="bob_the_builder">BOB THE BUILDER</string>
+    <string name="bob_the_builder_description">In this event participants have to construct a bridge from popsickle sticks (ice-cream sticks).The load bearing capacity and stability of the bridges will be checked.</string>
+    <string name="bob_the_builder_duration">N/A</string>
+    <string name="bob_the_builder_rules">* Minimum Length of Span = 50cm. \n* Minimum Height Of truss = 2sticks \n* Number Of Sticks = 60 \n* Fevicol will be provided as binder.</string>
+    <string name="bob_the_builder_event_type">N/A</string>
+
+    <string name="cartes">CARTES DE PALAIS</string>
+    <string name="cartes_description">This event is to check the imagination of the participants and their insight in to the field of Structure and design. In this participants have to make the Civil Structure with the help of 52 playing cards.</string>
+    <string name="cartes_duration">N/A</string>
+    <string name="cartes_rules">* Maximum 2 Participants per Team.</string>
+    <string name="cartes_event_type">N/A</string>
+
+    <string name="cadd_mania">CADD-O-MANIA</string>
+    <string name="cadd_mania_description">This is an On-The-Spot event which tests the perception and modelling abilities of participants. It is the 2-D Visualisation of a given 3-D structure using AUTOCAD software.</string>
+    <string name="cadd_mania_duration">N/A</string>
+    <string name="cadd_mania_rules">N/A</string>
+    <string name="cadd_mania_event_type">N/A</string>
+
+    <string name="floating_concrete">FLOATING CONCRETE</string>
+    <string name="floating_concrete_description">A concrete cube of size 15 cm x 15cm x15 cm is to be casted which can float. The cube which can take maximum compressive load will be the winner.</string>
+    <string name="floating_concrete_duration">N/A</string>
+    <string name="floating_concrete_rules">* Maximum 3 Participants per Team.</string>
+    <string name="floating_concrete_event_type">N/A</string>
+
+    <string name="snapshot">SNAPSHOT</string>
+    <string name="snapshot_description">Snapshot is an event that encourages the participants to showcase their photographic skills that help them capture cherishable moments. It is been introduced first time in Genero. Through this competition, Genero’17 tries to uplift the creative and imaginative skills of participants</string>
+    <string name="snapshot_duration">N/A</string>
+    <string name="snapshot_rules">* Single Participant event.</string>
+    <string name="snapshot_event_type">N/A</string>
+
+    <string name="roller_coaster">ROLLER COASTER</string>
+    <string name="roller_coaster_description">Participants have to make a Prototype of Roller Coaster using ice cream sticks and paper within given specification.</string>
+    <string name="sroller_coaster_duration">N/A</string>
+    <string name="roller_coaster_rules">* Maximum 2 Participants per team.</string>
+    <string name="roller_coaster_event_type">N/A</string>
+
+
+    <!--TECH EE -->
+    <string name="digi_quiz">DIGI QUIZ COMPETITION</string>
+    <string name="digi_quiz_description">The Digital Quiz Competition Event is held as a part of Genero 2017’s Technical Event. This event comprises of Three ROUNDS out of which First round will be Elimination Round in which 30 questions will be given from various topics including Logical Reasoning, Quantitative Aptitude and basic domain question on Elementary learning.</string>
+    <string name="digi_quiz_duration">N/A</string>
+    <string name="digi_quiz_rules">N/A</string>
+    <string name="digi_quiz_event_type">N/A</string>
+
+    <string name="line_follower">LINE FOLLOWER</string>
+    <string name="line_follower_description">The objective of this contest is for a robot to follow a black line on a white background, without losing the line, and navigating several 90 degree turns and sharp curves. The robot that complete the task in the shortest period of time while accurately tracking the course line from start to finish wins.</string>
+    <string name="line_follower_duration">N/A</string>
+    <string name="line_follower_rules">N/A</string>
+    <string name="line_follower_event_type">N/A</string>
+
+    <string name="mini_robo">MINI ROBO</string>
+    <string name="mini_robo_description">All pirates get to know that there are two hidden treasures in the TORTUGA Island, so they came here with their crew members to capture this treasure. All pirates have almost 3-4 fellows with them. Now this island contains volcano (fire pit) and big rock (hammer) which will act as obstacles in the island [square table]. Now as pirates keep coming and fighting with each other, the two pirates who will remain undefeated will get the treasure ( prize money).</string>
+    <string name="mini_robo_duration">N/A</string>
+    <string name="mini_robo_rules">N/A</string>
+    <string name="mini_robo_event_type">N/A</string>
+
+    <string name="race">RACE</string>
+    <string name="race_description">The structure of the robot should not be changed during the competition. If the robot by any chances falls from the bridge, the robot will be kept back to the previous checkpoint crossed with a penalty. During the game play, if any part of a robot is destructed/ dismantled/ damaged the participant will be given a timeout to repair at an expense of a penalty, while the next participant for will be called the play. Only 1 timeout will be given for any participant and the participant will repair it without the help from the mentor.</string>
+    <string name="race_duration">N/A</string>
+    <string name="race_rules">N/A</string>
+    <string name="race_event_type">N/A</string>
+
+    <string name="soccer">SOCCER</string>
+    <string name="soccer_description">Design a robot which plays soccer. The robot would compete against others in 1-1 matches.</string>
+    <string name="soccer_duration">N/A</string>
+    <string name="soccer_rules">N/A</string>
+    <string name="soccer_event_type">N/A</string>
+
+    <string name="sumo_war">SUMO WAR</string>
+    <string name="sumo_war_description">A match will constitute of three rounds according to the rule. In case of match draw , 1. The judges have the authority to extend the time of the match to decide the winner 2. The team which scored the first point of the match wins . 3. If both the teams couldn’t score any point in the given time, they would be given an extra time to score against each other then both teams will be awarded point each.</string>
+    <string name="sumo_war_duration">N/A</string>
+    <string name="sumo_war_rules">N/A</string>
+    <string name="sumo_war_event_type">N/A</string>
+
+    <string name="robo_war">ROBO WAR</string>
+    <string name="robo_war_description">A match will constitute of three rounds according to the rule. In case of match draw , 1. The judges have the authority to extend the time of the match to decide the winner 2. The team which scored the first point of the match wins . 3. If both the teams couldn’t score any point in the given time, they would be given an extra time to score against each other then both teams will be awarded point each.</string>
+    <string name="robo_war_duration">N/A</string>
+    <string name="robo_war_rules">N/A</string>
+    <string name="robo_war_event_type">N/A</string>
+
+    <!-- eGaming -->
+    <string name="cod">CALL OF DUTY 4</string>
+    <string name="cod_description">On the spot regist ration will be done only on 1 st November 2017 . Online registration is also available on GENERO’1 7 Website. Player must respect the spirit of fair play and non - violence. Use of personal map texture/model/skins (includes weapon skins) is NOT permitted. In case of any dispute organizers decision will be considered final. Third party program/additional software like mouse fix and dll’s will not be allowed. If teams are not fulfilling the criteria of the rules mentioned above then their registration will not be considered.</string>
+    <string name="cod_duration">N/A</string>
+    <string name="cod_rules">N/A</string>
+    <string name="cod_event_type">N/A</string>
+
+    <string name="cricket">CRICKET\'07</string>
+    <string name="cricket_description">1. Exhibition match will be of 5 - 5 overs on RANDOM pitch and weather type, MISCELLANEOUS location having 5 STAR difficulty. 2. Semi - final matches will be of 10 - 10 overs each side. 3. Final match will be of 20 - 20 overs per side.</string>
+    <string name="cricket_duration">N/A</string>
+    <string name="cricket_rules">N/A</string>
+    <string name="cricket_event_type">N/A</string>
+
+    <string name="cs">COUNTER STRIKE 1.6</string>
+    <string name="cs_description">1. There will be swap at 10 rounds first te am to win 11 rounds will proceed to the next stage of the tournament. \n2. Round Time: 1 minute 45 seconds. \n3. C4 Timer: 35 seconds. \n4. Players are expected to bring their gaming accessories.(Keyboard , Mouse ( optional). \n5. Final match will be “BEST OF THREE MAPS ”.</string>
+    <string name="cs_duration">N/A</string>
+    <string name="cs_rules">N/A</string>
+    <string name="cs_event_type">N/A</string>
+
+    <string name="fifa">FIFA\'14</string>
+    <string name="fifa_description">PRE - ROUNDS: \n* Half - length duration: 4min. \n* Bookings: ON. \n* Offside: ON. \n* Injuries: ON. \nQUARTERFINAL: \n* Half - length duration: 5min. \n* Bookings: ON. \n* Offside: ON. \n* Injuries: ON. \nSEMI - FINAL: \n* Half - length duration: 6min. \n* Bookings: ON. \n* Offside: ON. \n* Injuries: ON. \nFINAL: \n* Half - length duration: 7min. \n* Bookings: ON. \n* Offside: ON. \n* Injuries: ON. </string>
+    <string name="fifa_duration">N/A</string>
+    <string name="fifa_rules">N/A</string>
+    <string name="fifa_event_type">N/A</string>
+
+    <string name="mini_militia">MINI MILITIA</string>
+    <string name="mini_militia_description">1. No swapping or change of team members will be allowed. \n2. If all the members of the team are not present then the registration of the team will be cancelled. \n3. Cheating in any form will lead to disqualification. \n4. In case of disqualification, the registration fee will not be refunded. \n5. Teams are expected to report on time; late arrival will lead to disqualification. \n6. Coordinators decision is final. \n7. Everyone should obey the commands of the coordinator.\n8. In case any of your team members device crashes or unfortunately exits from the match there will be no rematch \n9. No cheats, propacks and god mod will be used. \n10. Each team should have 3 members. \n11. Map will be decided by toss. \n12. Game will be installed in every team players mobile by volunteers/co - ordinators.</string>
+    <string name="mini_militia_duration">N/A</string>
+    <string name="mini_militia_rules">Participants : Max 3.</string>
+    <string name="mini_militia_event_type">N/A</string>
+
+    <string name="tekken">TEKKEN 3</string>
+    <string name="tekken_description">1. Matches would be played on LAN. \n2. Match Type will be TEAM BATTLE MODE. \n3. For each fight timer would be decided at the time of match.\n4. Players are allowed to play with any character except GON and DR. B. \n5. Every match will be KNOCK OUT.</string>
+    <string name="tekken_duration">N/A</string>
+    <string name="tekken_rules"> Maximum 2 Participants per team.</string>
+    <string name="tekken_event_type">N/A</string>
+
+    <string name="nfs">NEED FOR SPEED</string>
+    <string name="nfs_description">1. Competition Mode: min 2 players. \n2. Game Type: Circuit/Sprint. \n3. Qualification: for next round will be decided on the basis of individual player’s timing. Players with the best timing wi ll qualify for the next round. \n4. Players are advised to bring their consoles</string>
+    <string name="nfs_duration">N/A</string>
+    <string name="nfs_rules">Minimum 2 Participants per team.</string>
+    <string name="nfs_event_type">N/A</string>
+
+    <!-- LITERARY -->
+    <string name="bili_debate">Bilingual Debate</string>
+    <string name="bili_debate_description">1. This will be an individual contest. \n2. Each speaker will present his/her perspective/opinion then they have to encounter an interjection round from the audience/judges. The mode of expression can be either in ENGLISH or in HINDI. The speaker will be judged on the following criteria, and will be awarded marks accordingly. \n* Interpretation of the Motion \n* Logical Presentation of Argument \n* Evidences and Examples \n* Audibility \n* Stance and Gestures \n* Address and Format \n* Elocution / Diction / Fluency \n* Rebuttal of Interjection</string>
+    <string name="bili_debate_duration">The speaker will speak for 3 minutes. A warning bell will be rung after 2½ minutes, and a final bell will be rung after the third minute.</string>
+    <string name="bili_debate_rules">On exceeding the prescribed time, negative marks will be awarded.</string>
+    <string name="bili_debate_event_type">N/A</string>
+
+    <string name="quiz">QUIZ</string>
+    <string name="quiz_description">1. Either individual or team entries will be allowed. \n2. A team shall consist of two persons. \n3. Use of any electronic devices will result in immediate disqualification. \n4. The questions shall be in the form of True / False statement, Specific-answer question etc. \n5. The decision of the quiz-master will be final and will not be subjected to any change. \n6. The quiz will be in both Hindi and English languages.</string>
+    <string name="quiz_duration">N/A</string>
+    <string name="quiz_rules">N/A</string>
+    <string name="quiz_event_type">N/A</string>
+
+    <string name="creative_writing">CREATIVE WRITING</string>
+    <string name="creative_writing_description">* Organizers will form a panel of highly qualified people to serve as competition judges. \n* The decision of the judging panel is final and no correspondence will be entered into regarding the decision.</string>
+    <string name="creative_writing_duration">N/A</string>
+    <string name="creative_writing_rules">N/A</string>
+    <string name="creative_writinge_event_type">N/A</string>
+
+
+    <string name="jam">JUST A MINUTE (JAM)</string>
+    <string name="jam_description">1. The decision made by JAM master will be final. No objection or argument should be there on the decision of JAM master.​ ​\n2. To object, slam the table and say “JAM”. The JAM master decides when you are allowed to put forth your objection.​ \n3. You get a penalty if the competition objects on any of the following counts: \n\t1. You object out of turn. \n\t2. You stutter, stammer, and generally indulge in “time-wasting tactics”. These include efforts to buy time like interspersing your talk with “uhh”, “aah” etc...​ \n\t3. Early start and late start.​ \n\t4. Speaking too fast or too slow. \n\t5. Grammatical errors.​ \n\t6. Undue stress on words, undue emphasis in the sentences. \n\t7. Repetition of a previously used idea.​​ \n4. The total time is sixty seconds, inclusive of all the time that all the speakers in a given round are allowed to speak.​</string>
+    <string name="jam_duration">N/A</string>
+    <string name="jam_rules">Points are given in the following manner:​ \n\t1. Positive points for every second that you speak.\n\t2. Positive points for every correct objection.​ \n\t3. Negative points for every incorrect objection.​ \n\t4. Bonus points for being the last speaker.​ \n* The winner is the person with the maximum number of points at the end of the round.​</string>
+    <string name="jam_event_type">N/A</string>
+
+    <string name="treasure_hunt">TREASURE HUNT</string>
+    <string name="treasure_hunt_description">1. Maximum of five members per team. \n2. Prelims will be conducted on the basis of number of registrations. \n3. The Treasure Hunt consists of 4-5 clues, each one leading to the next clue. \n4. Each correctly solved clue carries 10 points and final Treasure carries 50 points. \n5. The clues are to be found in a particular order. A team cannot skip a clue. Skipping a clue leads to disqualification of the team. \n6. Do not search for clues in off-limit areas. \n7. If you found other team’s clue by any chance never tamper it. A violation of this rule could cause disqualification of your team. \n8. You move any object to search the clue, kindly replace it back. \n9. All the clues of the teams are different and located at different places but the final destination i.e. the treasure is same. The team which finds the treasure wins first.</string>
+    <string name="treasure_hunt_duration">N/A</string>
+    <string name="treasure_hunt_rules">N/A</string>
+    <string name="treasure_hunt_event_type">N/A</string>
+
+    <string name="youth_parliamant">YOUTH PARLIAMENT</string>
+    <string name="youth_parliamant_description">1. The Youth Parliament is a simulation of the Indian Parliament wherein the participants appear as MPs and debate on issues of national importance. The MPs will be forming the government and the opposition with the government being a coalition of two or more parties. A party can leave the coalition on grounds of conflict of principles, or any other reasonable grounds but the decision should be rational. The Speaker will be evaluating each and every move of the MPs. \n2. The Speaker will chair the House .There will also be a Deputy Speaker as per the wish of the Speaker of the House. \n3. The Parliament will have 1 house- the Lok Sabha. A bill has to be passed in the house after which it will be sent to the President for his assent. The government shall send 3 representatives to present their case before the President after the bill is passed in both the Houses explaining the reasons for their bill to be passed. Its upto the discretion of the President to give his assent to the bill or not. \n4. The government shall present the bill in its real original form as in the present day. However, amendments in the draft will come in after progressive debate with opposition in the House. \n5. Its not binding on the MPs to take their government‘s stand on every issue. They may cast a negative vote or abstain from voting if they are unsatisfied with their party‘s decision. \n6. A bill introduced in one house of the Parliament shall be discussed in the other House only when it is passed in the first House. \n7. All bills require a simple majority to pass except Article 370, which will require a 2/3 majority as it involves an amendment of the constitution. \n8. In case of a disagreement between the two houses over a bill, a joint session will be summoned to resolve the deadlock. \n9. Apart from the bills, regular updates will be introduced in the houses to facilitate quick responses and actions in exigencies which will be a great learning process for the participants.</string>
+    <string name="youth_parliamant_duration">N/A</string>
+    <string name="youth_parliamant_rules">N/A</string>
+    <string name="youth_parliamant_event_type">N/A</string>
+
+    <!-- CULTURAL -->
+    <string name="solo_dance">SOLO DANCE</string>
+    <string name="solo_dance_description">Solo dance is the dance perform by an individual. Participants have to perform on the song of their choice and have to show their unique moves with versatile dance forms.</string>
+    <string name="solo_dance_duration">2- 3 minutes.</string>
+    <string name="solo_dance_rules">N/A</string>
+    <string name="solo_dance_event_type">N/A</string>
+
+    <string name="super_singer">SUPER SINGER</string>
+    <string name="super_singer_description">In this event participants have to sing a song on the stage for couple of minutes and will be judged on their skills.</string>
+    <string name="super_singer_duration">N/A</string>
+    <string name="super_singer_rules">N/A</string>
+    <string name="super_singer_event_type">N/A</string>
+
+    <string name="nritya_shakti">NRITYA SHAKTI</string>
+    <string name="snritya_shakti_description">In this event, a team have to perform on the stage on the song of their choice and showcase their moves in coordination.</string>
+    <string name="nritya_shakti_duration">Max Time: 7 min</string>
+    <string name="nritya_shakti_rules">Participants : 3 to 15</string>
+    <string name="nritya_shakti_event_type">N/A</string>
+
+    <string name="beat_beats">BEAT THE BEATS (FACE OFF)</string>
+    <string name="beat_beats_description">Informal competition between participant where two (or more) people oppose each other and dance until one is declared the winner by the judges.</string>
+    <string name="beat_beats_duration">N/A</string>
+    <string name="beat_beats_rules">N/A</string>
+    <string name="beat_beats_event_type">N/A</string>
+
+    <string name="fashion_show">FASHION SHOW</string>
+    <string name="fashion_show_description">Theme based fashion show (Classic books theme). Contestants will be judged on the basis of ramp walk, costumes and questionnaire.</string>
+    <string name="fashion_show_duration">N/A</string>
+    <string name="fashion_show_rules">N/A</string>
+    <string name="fashion_show_event_type">N/A</string>
+
+    <string name="nukkad_natak">NUKKAD NATAK</string>
+    <string name="snukkad_natak_description">Street performance and presentation in outdoor space without specific paying audience.</string>
+    <string name="nukkad_natak_duration">20-25 min</string>
+    <string name="snukkad_natak_rules">3 to 15</string>
+    <string name="nukkad_natak_event_type">N/A</string>
+
+    <string name="duet_dance">DUET DANCE</string>
+    <string name="duet_dance_description">Generally in Duet dance participants have to perform in pair on the song of their choice on the stage but there will be twist in our Duet dance competition. In our Duet dance there will be a wall between the two partners and then they have to perform. Wall will be the twist factor.</string>
+    <string name="duet_dance_duration">N/A</string>
+    <string name="duet_dance_rules">N/A</string>
+    <string name="duet_dance_event_type">N/A</string>
+
+    <!-- INFORMALS -->
+    <string name="dalal_street">DALAL STREET</string>
+    <string name="dalal_street_description">Dalal street is a virtual stock Trading Game.Dalal Street actually allowes the players to trade among themselves.Each player is provided with a fixed amount of vitual money initially for trading.Shares fror few companioes product are offered for sale.then with the fluctuation in the price of various products participants wins and looses the money.So by the end or closing of the market participants with large amount of money will win the game and other looses.</string>
+    <string name="dalal_street_duration">N/A</string>
+    <string name="dalal_street_rules">N/A</string>
+    <string name="dalal_street_event_type">N/A</string>
+
+    <string name="tambola">TAMBOLA</string>
+    <string name="tambola_description">Tambola is played on a basic principle. The organizer/caller calls the Number/CUE one at a time and players need to strike Numbers on their tickets.</string>
+    <string name="tambola_duration">N/A</string>
+    <string name="tambola_rules">Participants: 2-4 members in one team</string>
+    <string name="tambola_event_type">N/A</string>
+
+    <string name="tug_of_war">TUG OF WAR</string>
+    <string name="tug_of_war_description">A contest in which two teams pull against each other at opposite ends of a rope with the object of pulling the middle of the rope over a mark on the ground.</string>
+    <string name="ttug_of_war_duration">N/A</string>
+    <string name="tug_of_war_rules">Participants : 2-4 members in one team</string>
+    <string name="tug_of_wara_event_type">N/A</string>
+
+    <string name="mock_cid">MOCK CID</string>
+    <string name="mock_cid_description">An interesting on campus Murder Story is created,in which we have multiple teams to search clues and find the murderer .For which we leave clues tracing back to the murder on the campus.The clues should lead to witnessess(volunteers should be asked to role play) and the one who finds the real murderer first wins.we can have dummies and other clues to help participants</string>
+    <string name="mock_cid_duration">N/A</string>
+    <string name="mock_cid_rules">Participants : 2-4 members in a team</string>
+    <string name="mock_cid_event_type">N/A</string>
+
+    <string name="sketching">SKETCHING</string>
+    <string name="sketching_description">Sketching is a rapidly executed free hand drawing that is not usually intended as a finished work in which various dry medium are included such as silver point, graphite, pencil,charcol or pastel or oil pastels.</string>
+    <string name="sketching_duration">N/A</string>
+    <string name="sketching_rules">Participants : individual only</string>
+    <string name="sketching_event_type">N/A</string>
+
+    <string name="minute_to_win_it">MINUTE TO WIN IT</string>
+    <string name="minute_to_win_it_description">Minute to Win It is a game where contestants take part in a series of 60-second challenges that use objects that are commonly available around the house.</string>
+    <string name="minute_to_win_it_duration">N/A</string>
+    <string name="minute_to_win_it_rules">Participants : 4 persons in a team</string>
+    <string name="minute_to_win_it_event_type">N/A</string>
+
+    <string name="roadies">ROADIES</string>
+    <string name="roadies_description">Roadies is an event in which the applicants are first asked to fill out a form and then attend a Group Discussion (GD). The form consists of basic questions regarding the applicant and includes some questions like "Why do you want to be a Roadie?" etc.then they shortlist some people who are called on the next day for the Personal Interview round And These interviews try to bring out the true nature of the participants.The final participants are asked to perform different task .The participant who perform all the task successfully in a given time would win the game.</string>
+    <string name="roadies_duration">N/A</string>
+    <string name="roadies_rules">Participants : individual only</string>
+    <string name="roadies_event_type">N/A</string>
+
+    <string name="newspaper_dance">NEWSPAPER DANCE</string>
+    <string name="newspaper_dance_description">Newspaper dance is a game for dancing companions.Once their song stops, the partners should stop on the piece of newspaper and avoid touching the ground.The Newspaper is folded in every stop so it gets smaller and smaller and so as the no. Of players. The participants whose feet touch to the ground outside the Newspaper will be out.</string>
+    <string name="newspaper_dance_duration">N/A</string>
+    <string name="newspaper_dance_rules">Participants : 2 persons</string>
+    <string name="newspaper_dance_event_type">N/A</string>
 </resources>
