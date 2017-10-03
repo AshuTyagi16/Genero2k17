@@ -23,13 +23,14 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import in.genero.pirates.genero2k17.fragments.EventsFragment;
+import in.genero.pirates.genero2k17.fragments.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-//    @BindView(R.id.fab)
+    //    @BindView(R.id.fab)
 //    FloatingActionButton fab;
     @BindView(R.id.drawer_layout)
     DrawerLayout drawer;
@@ -51,17 +52,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        kbv.setTransitionListener(new KenBurnsView.TransitionListener() {
-            @Override
-            public void onTransitionStart(Transition transition) {
-
-            }
-
-            @Override
-            public void onTransitionEnd(Transition transition) {
-
-            }
-        });
+        replaceFragment(EventsFragment.newInstance(),EventsFragment.class.getName());
     }
 
     @Override
@@ -106,7 +97,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.core_team) {
 
         } else if (id == R.id.sponsors) {
-
+            replaceFragment(SponsorsFragment.newInstance(), SponsorsFragment.class.getName());
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

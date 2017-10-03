@@ -11,29 +11,29 @@ import com.joooonho.SelectableRoundedImageView;
 import java.util.ArrayList;
 
 import in.genero.pirates.genero2k17.R;
-import in.genero.pirates.genero2k17.models.Event;
+import in.genero.pirates.genero2k17.models.Sponsors;
 
 /**
  * Created by Sasuke on 10/3/2017.
  */
 
-public class HorizontalPagerAdapter extends PagerAdapter {
+public class VerticalPagerAdapter  extends PagerAdapter {
 
-    private ArrayList<Event> mEventList = new ArrayList<>();
+    private ArrayList<Sponsors> mSponsorsList = new ArrayList<>();
 
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    public HorizontalPagerAdapter(final Context context, ArrayList<Event> eventList) {
+    public VerticalPagerAdapter(final Context context, ArrayList<Sponsors> eventList) {
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
-        mEventList = eventList;
+        mSponsorsList = eventList;
     }
 
     @Override
     public int getCount() {
-        if (mEventList != null)
-            return mEventList.size();
+        if (mSponsorsList != null)
+            return mSponsorsList.size();
         else
             return 0;
     }
@@ -46,8 +46,8 @@ public class HorizontalPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(final ViewGroup container, final int position) {
         final View view;
-        view = mLayoutInflater.inflate(R.layout.cell_events, container, false);
-        setupItem(view, mEventList.get(position));
+        view = mLayoutInflater.inflate(R.layout.cell_sponsors, container, false);
+        setupItem(view, mSponsorsList.get(position));
         container.addView(view);
         return view;
     }
@@ -62,9 +62,9 @@ public class HorizontalPagerAdapter extends PagerAdapter {
         container.removeView((View) object);
     }
 
-    private void setupItem(final View view, final Event event) {
-        final SelectableRoundedImageView img = (SelectableRoundedImageView) view.findViewById(R.id.img_event);
-        img.setImageResource(event.getImage());
+    private void setupItem(final View view, final Sponsors sponsors) {
+        final SelectableRoundedImageView img = (SelectableRoundedImageView) view.findViewById(R.id.img_sponsors);
+        img.setImageResource(sponsors.getLogo());
     }
 
 }
