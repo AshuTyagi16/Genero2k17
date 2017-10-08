@@ -1,5 +1,7 @@
-package in.genero.pirates.genero2k17;
+package in.genero.pirates.genero2k17.activity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -14,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.flaviofaria.kenburnsview.KenBurnsView;
 import com.flaviofaria.kenburnsview.Transition;
@@ -22,6 +25,9 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import in.genero.pirates.genero2k17.R;
+import in.genero.pirates.genero2k17.fragments.AboutUsFragment;
+import in.genero.pirates.genero2k17.fragments.CoreTeamFragment;
 import in.genero.pirates.genero2k17.fragments.EventsFragment;
 import in.genero.pirates.genero2k17.fragments.SponsorsFragment;
 
@@ -52,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        replaceFragment(EventsFragment.newInstance(),EventsFragment.class.getName());
+        replaceFragment(AboutUsFragment.newInstance(), AboutUsFragment.class.getName());
     }
 
     @Override
@@ -88,14 +94,17 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.events) {
             replaceFragment(EventsFragment.newInstance(), EventsFragment.class.getName());
+        } else if (id == R.id.about_us) {
+            replaceFragment(AboutUsFragment.newInstance(), AboutUsFragment.class.getName());
         } else if (id == R.id.special_events) {
-
+            Toast.makeText(this, "Will be revealed later", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.register) {
-
+            drawer.closeDrawers();
+            openRegisterLink();
         } else if (id == R.id.contact_us) {
-
+            Toast.makeText(this, "Feature not added yet", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.core_team) {
-
+            replaceFragment(CoreTeamFragment.newInstance(), CoreTeamFragment.class.getName());
         } else if (id == R.id.sponsors) {
             replaceFragment(SponsorsFragment.newInstance(), SponsorsFragment.class.getName());
         }
@@ -103,6 +112,13 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void openRegisterLink() {
+        String url = "https://paytm.com/education?op=ABES%20Engineering%20College&type=registration";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 
     private void replaceFragment(final Fragment fragment, final String tag) {

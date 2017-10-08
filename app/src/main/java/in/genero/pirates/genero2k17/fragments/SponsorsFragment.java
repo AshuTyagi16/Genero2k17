@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.gigamole.infinitecycleviewpager.VerticalInfiniteCycleViewPager;
+import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import in.genero.pirates.genero2k17.R;
-import in.genero.pirates.genero2k17.adapters.VerticalPagerAdapter;
+import in.genero.pirates.genero2k17.adapters.SponsersPagerAdapter;
 import in.genero.pirates.genero2k17.models.Sponsors;
 
 /**
@@ -20,7 +20,7 @@ import in.genero.pirates.genero2k17.models.Sponsors;
 public class SponsorsFragment extends BaseFragment {
 
     @BindView(R.id.vicvp)
-    VerticalInfiniteCycleViewPager verticalInfiniteCycleViewPager;
+    HorizontalInfiniteCycleViewPager horizontalInfiniteCycleViewPager;
 
     @Override
     protected int getLayoutResId() {
@@ -34,7 +34,7 @@ public class SponsorsFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        verticalInfiniteCycleViewPager.setAdapter(new VerticalPagerAdapter(getContext(), getSponsers()));
+        horizontalInfiniteCycleViewPager.setAdapter(new SponsersPagerAdapter(getContext(), getSponsers()));
     }
 
     public ArrayList<Sponsors> getSponsers(){

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.gigamole.infinitecycleviewpager.VerticalInfiniteCycleViewPager
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
         android:id="@+id/vicvp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -3,11 +3,14 @@ package in.genero.pirates.genero2k17.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.Toast;
 
+import com.flaviofaria.kenburnsview.KenBurnsView;
+import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 import com.google.gson.Gson;
 
+import butterknife.BindView;
 import in.genero.pirates.genero2k17.R;
+import in.genero.pirates.genero2k17.adapters.EventDetailsPagerAdapter;
 import in.genero.pirates.genero2k17.models.Event;
 
 /**
@@ -17,6 +20,11 @@ import in.genero.pirates.genero2k17.models.Event;
 public class EventDetailFragment extends BaseFragment {
     private static final String EXTRA_EVENT = "event";
     private Event mEvent;
+
+    @BindView(R.id.hicvp)
+    HorizontalInfiniteCycleViewPager horizontalInfiniteCycleViewPager;
+    @BindView(R.id.kenbuns_view)
+    KenBurnsView kenBurnsView;
 
     @Override
     protected int getLayoutResId() {
@@ -43,7 +51,6 @@ public class EventDetailFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Toast.makeText(getContext(), mEvent.getClubName(), Toast.LENGTH_SHORT).show();
-        Toast.makeText(getContext(), mEvent.getEventDetails().get(0).getEventDescription(), Toast.LENGTH_SHORT).show();
+        horizontalInfiniteCycleViewPager.setAdapter(new EventDetailsPagerAdapter(getContext(), mEvent));
     }
 }

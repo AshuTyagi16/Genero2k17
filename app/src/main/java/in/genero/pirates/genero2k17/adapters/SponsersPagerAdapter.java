@@ -17,14 +17,14 @@ import in.genero.pirates.genero2k17.models.Sponsors;
  * Created by Sasuke on 10/3/2017.
  */
 
-public class VerticalPagerAdapter  extends PagerAdapter {
+public class SponsersPagerAdapter extends PagerAdapter {
 
     private ArrayList<Sponsors> mSponsorsList = new ArrayList<>();
 
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    public VerticalPagerAdapter(final Context context, ArrayList<Sponsors> eventList) {
+    public SponsersPagerAdapter(final Context context, ArrayList<Sponsors> eventList) {
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
         mSponsorsList = eventList;

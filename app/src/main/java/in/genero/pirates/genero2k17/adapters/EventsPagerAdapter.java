@@ -17,14 +17,14 @@ import in.genero.pirates.genero2k17.models.Event;
  * Created by Sasuke on 10/3/2017.
  */
 
-public class HorizontalPagerAdapter extends PagerAdapter {
+public class EventsPagerAdapter extends PagerAdapter {
 
     private ArrayList<Event> mEventList = new ArrayList<>();
 
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    public HorizontalPagerAdapter(final Context context, ArrayList<Event> eventList) {
+    public EventsPagerAdapter(final Context context, ArrayList<Event> eventList) {
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
         mEventList = eventList;

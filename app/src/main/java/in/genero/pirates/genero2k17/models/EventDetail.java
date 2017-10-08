@@ -12,7 +12,7 @@ public class EventDetail {
     private String eventRules;
 
     public String getEventRules() {
-        return eventRules;
+        return checkResponse(eventRules);
     }
 
     public void setEventRules(String eventRules) {
@@ -22,7 +22,7 @@ public class EventDetail {
     private String eventDuration;
 
     public String getEventType() {
-        return eventType;
+        return checkResponse(eventType);
     }
 
     public void setEventType(String eventType) {
@@ -30,7 +30,7 @@ public class EventDetail {
     }
 
     public String getEventDuration() {
-        return eventDuration;
+        return checkResponse(eventDuration);
     }
 
     public void setEventDuration(String eventDuration) {
@@ -38,7 +38,7 @@ public class EventDetail {
     }
 
     public String getEvevtName() {
-        return evevtName;
+        return checkResponse(evevtName);
     }
 
     public void setEvevtName(String evevtName) {
@@ -46,10 +46,18 @@ public class EventDetail {
     }
 
     public String getEventDescription() {
-        return eventDescription;
+        return checkResponse(eventDescription);
     }
 
     public void setEventDescription(String eventDescription) {
         this.eventDescription = eventDescription;
+    }
+
+    private String checkResponse(String response) {
+        if (response != null)
+            return response;
+        else
+            return "";
+
     }
 }

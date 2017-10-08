@@ -10,6 +10,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [onesignal_app_id: "4e375a02-50f2-4b1f-95cd-c4aca751ee23",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "289560950179"]
     }
     buildTypes {
         release {
@@ -46,5 +50,6 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.joooonho:selectableroundedimageview:1.0.1'
     compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
-
+    compile 'com.onesignal:OneSignal:[3.6.2, 3.99.99]'
+    compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
 }

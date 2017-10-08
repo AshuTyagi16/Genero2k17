@@ -349,4 +349,9 @@
     <string name="newspaper_dance_duration">N/A</string>
     <string name="newspaper_dance_rules">Participants : 2 persons</string>
     <string name="newspaper_dance_event_type">N/A</string>
+
+    <!-- ABOUT US -->
+    <string name="abes">Academy of Business and Engineering Sciences (ABES),with captivating state of art campus having aesthetically lush green, serene and capitulating landscape of eco-friendly environment situated on Delhi Hapur by-pass road, NH-24, 19 kms from Delhi border with proximity to hub of industries, MNCs and business houses was started in 2000 with B.Tech. (CSE, IT, ECE, ME, CE, EEE) and MCA, with the approval from AICTE, New Delhi and affiliated to Abdul Kalam Technical University, Lucknow having AKTU code 032.</string>
+    <string name="genero_tag">WHAT IS GENERO?</string>
+    <string name="genero">It is a three days fiesta that calls in for various event in the domain of technical, cultural, informal, literary, E-Gaming wrapped up with three Exclusive Events for each day. ABES has been organizing “GENERO” for past several years now and with a good amount of audience from colleges and places all over Delhi NCR and made the “GENERO” a success story.</string>
 </resources>

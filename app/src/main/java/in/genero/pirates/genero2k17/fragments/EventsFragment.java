@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import in.genero.pirates.genero2k17.R;
 import in.genero.pirates.genero2k17.activity.EventDetailActivity;
-import in.genero.pirates.genero2k17.adapters.HorizontalPagerAdapter;
+import in.genero.pirates.genero2k17.adapters.EventsPagerAdapter;
 import in.genero.pirates.genero2k17.models.Event;
 import in.genero.pirates.genero2k17.models.EventDetail;
 
@@ -34,7 +34,7 @@ public class EventsFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        horizontalInfiniteCycleViewPager.setAdapter(new HorizontalPagerAdapter(getContext(), getEventList()));
+        horizontalInfiniteCycleViewPager.setAdapter(new EventsPagerAdapter(getContext(), getEventList()));
         mList = getEventList();
         horizontalInfiniteCycleViewPager.setOnInfiniteCyclePageTransformListener(new OnInfiniteCyclePageTransformListener() {
             @Override
@@ -75,6 +75,7 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEventDescription(getResources().getString(R.string.duel_freaks_description));
         eventDetail.setEventDuration(getResources().getString(R.string.duel_freaks_duration));
         eventDetail.setEventType(getResources().getString(R.string.duel_freaks_event_type));
+        eventDetail.setEventRules(getResources().getString(R.string.duel_freaks_rules));
         eventDetailsList.add(eventDetail);
 
         //GLOBAL OPTIMAL
@@ -83,6 +84,7 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEventDescription(getResources().getString(R.string.global_optimal_description));
         eventDetail.setEventDuration(getResources().getString(R.string.global_optimal_duration));
         eventDetail.setEventType(getResources().getString(R.string.global_optimal_event_type));
+        eventDetail.setEventRules(getResources().getString(R.string.global_optimal_rules));
         eventDetailsList.add(eventDetail);
 
         //SHUT THE BUG UP
@@ -90,12 +92,14 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEvevtName(getResources().getString(R.string.shut_the_bug));
         eventDetail.setEventDescription(getResources().getString(R.string.shut_the_bug_description));
         eventDetail.setEventDuration(getResources().getString(R.string.shut_the_bug_duration));
+        eventDetail.setEventRules(getResources().getString(R.string.shut_the_bug_rules));
         eventDetail.setEventType(getResources().getString(R.string.shut_the_bug_event_type));
         eventDetailsList.add(eventDetail);
 
         //NO LEISURE FOR LINGUISTICS
         eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.no_leisure));
+        eventDetail.setEventRules(getResources().getString(R.string.no_leisure_rules));
         eventDetail.setEventDescription(getResources().getString(R.string.no_leisure_description));
         eventDetail.setEventDuration(getResources().getString(R.string.no_leisure_duration));
         eventDetail.setEventType(getResources().getString(R.string.no_leisure_event_type));
@@ -106,6 +110,7 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEvevtName(getResources().getString(R.string.simply_weblogical));
         eventDetail.setEventDescription(getResources().getString(R.string.simply_weblogical_description));
         eventDetail.setEventDuration(getResources().getString(R.string.simply_weblogical_duration));
+        eventDetail.setEventRules(getResources().getString(R.string.simply_weblogical_rules));
         eventDetail.setEventType(getResources().getString(R.string.simply_weblogical_event_type));
         eventDetailsList.add(eventDetail);
 
@@ -115,6 +120,7 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEventDescription(getResources().getString(R.string.hack_trec_description));
         eventDetail.setEventDuration(getResources().getString(R.string.hack_trec_duration));
         eventDetail.setEventType(getResources().getString(R.string.hack_trec_event_type));
+        eventDetail.setEventRules(getResources().getString(R.string.hack_trec_rules));
         eventDetailsList.add(eventDetail);
 
         //AL-KHWARIZMI PROGRAMMING EVENT
@@ -122,6 +128,7 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEvevtName(getResources().getString(R.string.al_khwarizmi));
         eventDetail.setEventDescription(getResources().getString(R.string.al_khwarizmi_description));
         eventDetail.setEventDuration(getResources().getString(R.string.al_khwarizmi_duration));
+        eventDetail.setEventRules(getResources().getString(R.string.al_khwarizmi_rules));
         eventDetail.setEventType(getResources().getString(R.string.al_khwarizmi_event_type));
         eventDetailsList.add(eventDetail);
 
@@ -146,6 +153,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //PIRATES BATTLE
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.pirates_battle));
         eventDetail.setEventDescription(getResources().getString(R.string.pirates_battle_description));
         eventDetail.setEventDuration(getResources().getString(R.string.pirates_battle_duration));
@@ -154,6 +162,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //MODELLING
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.modelling));
         eventDetail.setEventDescription(getResources().getString(R.string.modelling_description));
         eventDetail.setEventDuration(getResources().getString(R.string.modelling_duration));
@@ -162,6 +171,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //ROAD RASH
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.road_rash));
         eventDetail.setEventDescription(getResources().getString(R.string.road_rash_description));
         eventDetail.setEventDuration(getResources().getString(R.string.road_rash_duration));
@@ -170,6 +180,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //WATER ROCKET
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.water_rocket));
         eventDetail.setEventDescription(getResources().getString(R.string.rwater_rocket_description));
         eventDetail.setEventDuration(getResources().getString(R.string.water_rocket_duration));
@@ -178,6 +189,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //AUTOMOBILE QUIZ
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.automobile_quiz));
         eventDetail.setEventDescription(getResources().getString(R.string.automobile_quiz_description));
         eventDetail.setEventDuration(getResources().getString(R.string.automobile_quiz_duration));
@@ -207,6 +219,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //CARTES
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.cartes));
         eventDetail.setEventDescription(getResources().getString(R.string.cartes_description));
         eventDetail.setEventDuration(getResources().getString(R.string.cartes_duration));
@@ -215,6 +228,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //CADD-O-MANIA
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.cadd_mania));
         eventDetail.setEventDescription(getResources().getString(R.string.cadd_mania_description));
         eventDetail.setEventDuration(getResources().getString(R.string.cadd_mania_duration));
@@ -223,6 +237,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //FLOATING CONCRETE
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.floating_concrete));
         eventDetail.setEventDescription(getResources().getString(R.string.floating_concrete_description));
         eventDetail.setEventDuration(getResources().getString(R.string.floating_concrete_duration));
@@ -231,6 +246,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //SNAPSHOT
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.snapshot));
         eventDetail.setEventDescription(getResources().getString(R.string.snapshot_description));
         eventDetail.setEventDuration(getResources().getString(R.string.snapshot_duration));
@@ -239,6 +255,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //ROLLER COASTER
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.roller_coaster));
         eventDetail.setEventDescription(getResources().getString(R.string.roller_coaster_description));
         eventDetail.setEventDuration(getResources().getString(R.string.sroller_coaster_duration));
@@ -268,6 +285,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //LINE FOLLOWER
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.line_follower));
         eventDetail.setEventDescription(getResources().getString(R.string.line_follower_description));
         eventDetail.setEventDuration(getResources().getString(R.string.line_follower_duration));
@@ -276,6 +294,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //MINI ROBO
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.mini_robo));
         eventDetail.setEventDescription(getResources().getString(R.string.mini_robo_description));
         eventDetail.setEventDuration(getResources().getString(R.string.mini_robo_duration));
@@ -284,6 +303,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //RACE
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.race));
         eventDetail.setEventDescription(getResources().getString(R.string.race_description));
         eventDetail.setEventDuration(getResources().getString(R.string.race_duration));
@@ -292,6 +312,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //SOCCER
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.soccer));
         eventDetail.setEventDescription(getResources().getString(R.string.soccer_description));
         eventDetail.setEventDuration(getResources().getString(R.string.soccer_duration));
@@ -300,6 +321,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //SUMO WAR
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.sumo_war));
         eventDetail.setEventDescription(getResources().getString(R.string.sumo_war_description));
         eventDetail.setEventDuration(getResources().getString(R.string.sumo_war_duration));
@@ -308,6 +330,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //ROBO WAR
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.robo_war));
         eventDetail.setEventDescription(getResources().getString(R.string.robo_war_description));
         eventDetail.setEventDuration(getResources().getString(R.string.robo_war_duration));
@@ -337,6 +360,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //CRICKET
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.cricket));
         eventDetail.setEventDescription(getResources().getString(R.string.cricket_description));
         eventDetail.setEventDuration(getResources().getString(R.string.cricket_duration));
@@ -345,6 +369,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //COUNTER STRIKE
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.cs));
         eventDetail.setEventDescription(getResources().getString(R.string.cs_description));
         eventDetail.setEventDuration(getResources().getString(R.string.cs_duration));
@@ -353,6 +378,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //FIFA
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.fifa));
         eventDetail.setEventDescription(getResources().getString(R.string.fifa_description));
         eventDetail.setEventDuration(getResources().getString(R.string.fifa_duration));
@@ -361,6 +387,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //MINI MILITIA
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.mini_militia));
         eventDetail.setEventDescription(getResources().getString(R.string.mini_militia_description));
         eventDetail.setEventDuration(getResources().getString(R.string.mini_militia_duration));
@@ -369,6 +396,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //TEKKEN 3
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.tekken));
         eventDetail.setEventDescription(getResources().getString(R.string.tekken_description));
         eventDetail.setEventDuration(getResources().getString(R.string.tekken_duration));
@@ -377,6 +405,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //NEED FOR SPEED
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.nfs));
         eventDetail.setEventDescription(getResources().getString(R.string.nfs_description));
         eventDetail.setEventDuration(getResources().getString(R.string.nfs_duration));
@@ -406,6 +435,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //QUIZ
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.quiz));
         eventDetail.setEventDescription(getResources().getString(R.string.quiz_description));
         eventDetail.setEventDuration(getResources().getString(R.string.quiz_duration));
@@ -414,6 +444,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //CREATIVE WRITING
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.creative_writing));
         eventDetail.setEventDescription(getResources().getString(R.string.creative_writing_description));
         eventDetail.setEventDuration(getResources().getString(R.string.creative_writing_duration));
@@ -422,6 +453,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //JUST A MINUTE (JAM)
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.jam));
         eventDetail.setEventDescription(getResources().getString(R.string.jam_description));
         eventDetail.setEventDuration(getResources().getString(R.string.jam_duration));
@@ -430,6 +462,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //TREASURE HUNT
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.treasure_hunt));
         eventDetail.setEventDescription(getResources().getString(R.string.treasure_hunt_description));
         eventDetail.setEventDuration(getResources().getString(R.string.treasure_hunt_duration));
@@ -438,6 +471,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //YOUTH PARLIAMENT
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.youth_parliamant));
         eventDetail.setEventDescription(getResources().getString(R.string.youth_parliamant_description));
         eventDetail.setEventDuration(getResources().getString(R.string.youth_parliamant_duration));
@@ -459,6 +493,7 @@ public class EventsFragment extends BaseFragment {
 
 
         //SOLO DANCE
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.solo_dance));
         eventDetail.setEventDescription(getResources().getString(R.string.solo_dance_description));
         eventDetail.setEventDuration(getResources().getString(R.string.solo_dance_duration));
@@ -467,6 +502,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //SUPER SINGER
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.super_singer));
         eventDetail.setEventDescription(getResources().getString(R.string.super_singer_description));
         eventDetail.setEventDuration(getResources().getString(R.string.super_singer_duration));
@@ -475,6 +511,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //NRITYA SHAKTI
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.nritya_shakti));
         eventDetail.setEventDescription(getResources().getString(R.string.nritya_shakti_duration));
         eventDetail.setEventDuration(getResources().getString(R.string.nritya_shakti_duration));
@@ -483,6 +520,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //BEAT THE BEATS (FACE OFF)
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.beat_beats));
         eventDetail.setEventDescription(getResources().getString(R.string.beat_beats_description));
         eventDetail.setEventDuration(getResources().getString(R.string.beat_beats_duration));
@@ -491,6 +529,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //FASHION SHOW
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.fashion_show));
         eventDetail.setEventDescription(getResources().getString(R.string.fashion_show_description));
         eventDetail.setEventDuration(getResources().getString(R.string.fashion_show_duration));
@@ -499,6 +538,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //NUKKAD NATAK
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.nukkad_natak));
         eventDetail.setEventDescription(getResources().getString(R.string.snukkad_natak_description));
         eventDetail.setEventDuration(getResources().getString(R.string.nukkad_natak_duration));
@@ -528,6 +568,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //TAMBOLA
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.tambola));
         eventDetail.setEventDescription(getResources().getString(R.string.tambola_description));
         eventDetail.setEventDuration(getResources().getString(R.string.tambola_duration));
@@ -536,6 +577,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //TUG OF WAR
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.tug_of_war));
         eventDetail.setEventDescription(getResources().getString(R.string.tug_of_war_description));
         eventDetail.setEventDuration(getResources().getString(R.string.ttug_of_war_duration));
@@ -543,7 +585,8 @@ public class EventsFragment extends BaseFragment {
         eventDetail.setEventRules(getResources().getString(R.string.tug_of_war_rules));
         eventDetailsList.add(eventDetail);
 
-        //MOCK COD
+        //MOCK CID
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.mock_cid));
         eventDetail.setEventDescription(getResources().getString(R.string.mock_cid_description));
         eventDetail.setEventDuration(getResources().getString(R.string.mock_cid_duration));
@@ -552,6 +595,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //SKETCHING
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.sketching));
         eventDetail.setEventDescription(getResources().getString(R.string.sketching_description));
         eventDetail.setEventDuration(getResources().getString(R.string.sketching_duration));
@@ -560,6 +604,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //MINUTE TO WIN IT
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.minute_to_win_it));
         eventDetail.setEventDescription(getResources().getString(R.string.minute_to_win_it_description));
         eventDetail.setEventDuration(getResources().getString(R.string.minute_to_win_it_duration));
@@ -568,6 +613,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //ROADIES
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.roadies));
         eventDetail.setEventDescription(getResources().getString(R.string.roadies_description));
         eventDetail.setEventDuration(getResources().getString(R.string.roadies_duration));
@@ -576,6 +622,7 @@ public class EventsFragment extends BaseFragment {
         eventDetailsList.add(eventDetail);
 
         //NEWSPAPER DANCE
+        eventDetail = new EventDetail();
         eventDetail.setEvevtName(getResources().getString(R.string.newspaper_dance));
         eventDetail.setEventDescription(getResources().getString(R.string.newspaper_dance_description));
         eventDetail.setEventDuration(getResources().getString(R.string.newspaper_dance_duration));
